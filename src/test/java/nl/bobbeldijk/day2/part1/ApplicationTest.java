@@ -24,8 +24,6 @@ class ApplicationTest {
         var testInput = InputReader.readStreamFromInputFile(InputFile.DAY2, true, "test")
                 .collect(Collectors.toList());
 
-        var application = new Application();
-
         assertEquals(15, application.calculateAnswer(testInput));
     }
 }
